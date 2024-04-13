@@ -38,9 +38,7 @@
 .experience-accord-section .main-accord-wrapper li .accord-main-wrapper .accord-title{
     padding: var(--spacing-p1);
 }
-.experience-accord-section .main-accord-wrapper li .accord-main-wrapper .accord-title.active{
-    padding-bottom: 0;
-}
+
 .experience-accord-section .accord-title .accord-title-heading{
     position: relative;
     display: block;
