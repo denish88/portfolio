@@ -3,7 +3,7 @@ import './ContactUs.css'
 import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, nodeIcon, reactIcon, sqlIcon } from '../../logos'
 import MainImg from "../../assets/image/myPhoto.png"
 
-export const ContactUs = () => {
+ const ContactUs = () => {
     // State to hold the icon size
     const [iconSize, setIconSize] = useState({ width: '35px', height: '35px' });
 
@@ -141,3 +141,5 @@ export const ContactUs = () => {
         </section>
     )
 }
+
+export default ContactUs;

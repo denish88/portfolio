@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionFourImg from "../../assets/image/section_4_img.svg";
 import logo from "../../assets/image/om_eng.png";
 import "./Experiance.css";
-export const Experiance = () => {
+const Experiance = () => {
   const [openAccordian, setOpenAccordian] = useState({
     first: false,
     second: false,
@@ -161,3 +161,5 @@ export const Experiance = () => {
     </>
   );
 };
+
+export default Experiance;

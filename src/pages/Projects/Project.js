@@ -8,7 +8,7 @@ import { KerasIcon } from '../../logos'
 
 
 
-export const Project = () => {
+const Project = () => {
     return (<>
         <section className='project-section c-pd-3'>
             <div className='container'>
@@ -147,3 +147,5 @@ export const Project = () => {
         </>
     )
 }
+
+export default Project
