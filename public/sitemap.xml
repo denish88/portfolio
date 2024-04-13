@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://yourdomain.com/</loc>
+        <loc>https://denish48.vercel.app/</loc>
         <lastmod>2023-03-29</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://yourdomain.com/about</loc>
+        <loc>https://denish48.vercel.app/education</loc>
+        <lastmod>2023-03-29</lastmod>
+        <priority>0.80</priority>
+    </url>
+     <url>
+        <loc>https://denish48.vercel.app/projects</loc>
+        <lastmod>2023-03-29</lastmod>
+        <priority>0.80</priority>
+    </url>
+     <url>
+        <loc>https://denish48.vercel.app/contact</loc>
         <lastmod>2023-03-29</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://yourdomain.com/education</loc>
+        <loc>https://denish48.vercel.app/experience</loc>
         <lastmod>2023-03-29</lastmod>
         <priority>0.80</priority>
     </url>
