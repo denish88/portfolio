@@ -1,0 +1,185 @@
+.eduction-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.eduction-wrapper .eduction-image{
+    max-width: 50%;
+    width: 100%;
+}
+.eduction-wrapper .eduction-content{
+    flex: 1;
+    text-align: center;
+}
+.eduction-wrapper .eduction-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.eduction-wrapper .eduction-image {
+    max-width: 50%;
+    width: 100%;
+    max-height:300px;
+}
+.eduction-wrapper .para-rtl{
+    margin-bottom: 10px;
+}
+/* Degree */
+.degree .section-heading{
+    text-align: center;
+    margin-bottom: var(--spacing-p1);
+}
+.degree-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: var(--spacing-p2);
+}
+.degree-wrapper .degree-icon-item img{
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.degree-wrapper .degree-content{
+    flex: 1;
+    width: 100%;
+    padding-left: var(--spacing-p3);
+}
+.degree-wrapper .degree-content .degree-content-item{
+    border: 1px solid #fff;
+    padding: var(--spacing-p1);
+    box-shadow:rgb(233 233 255 / 20%) 0px 0px 13px 3px;
+    border-radius: 5px;
+}
+.degree-wrapper .degree-content-heading{
+    display: flex;
+}
+/* change the heading  in degree so change */
+.degree-wrapper .degree-content-heading h3{
+    flex: 1;
+}
+.degree-wrapper .degree-content-heading .year-wrapper{
+    max-width: 70px;
+    width: 100%;
+    text-align: right;
+}
+.degree-wrapper .degree-content-heading .year-wrapper span{
+    font-size: calc(var(--base-font) - 4px);
+}
+.degree-wrapper .degree-sub-heading{
+    margin-bottom: var(--spacing-p2);
+}
+.degree-wrapper .degree-description ul li{
+    margin-bottom: var(--spacing-p1);
+}
+
+@media (max-width:767px){
+    .eduction-wrapper .eduction-image{
+        max-width: 100%;
+    }
+    .eduction-wrapper .eduction-image.left-pt{
+        padding-left: 0;
+    }
+    .eduction-wrapper .eduction-content{
+        margin-top: var(--spacing-p3);
+    }
+    .degree-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .degree-wrapper .degree-icon-main{
+        margin-bottom: var(--spacing-p1);
+    }
+    .degree-wrapper .degree-content{
+        padding-left: 0
+    }
+}
+/* certificate css*/
+.logo-section .section-heading{
+    text-align: center;
+    margin-bottom: var(--spacing-p1);
+}
+.logo-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.logo-wrapper .logo-item{
+    flex: 0 0 calc(33.33% - 10px );
+    border:     1px solid #2b2b2b;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.logo-wrapper .logo-item::after,
+.logo-wrapper .logo-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    z-index: -1;
+}
+.logo-wrapper .logo-item::before{
+    border-top-width: 0;
+    border-bottom-width: 0;
+    animation: animate1 4s linear infinite;
+}
+.logo-wrapper .logo-item::after{
+    border-left-width: 0;
+    border-right-width: 0;
+    animation: animate 4s linear infinite;
+}
+.logo-wrapper .logo-item .image-wrapper{
+    padding: var(--spacing-p1);
+}
+
+.logo-wrapper .logo-item .content-wrapper{
+    padding: var(--spacing-p3)  var(--spacing-p1);
+    background-color: var(--card-bg);
+}
+.logo-wrapper .logo-item {
+  text-align: center;
+  cursor: pointer;
+}
+.logo-wrapper .logo-item:hover .image-wrapper{
+    opacity: .5;
+}
+.logo-wrapper .logo-item:hover .hover-wrapper   {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1) ;
+    background: var(--card-bg);
+    padding: var(--spacing-p1);
+    z-index: 2;
+    backdrop-filter: blur(4px);
+}
+.hover-wrapper {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+@media (max-width:767px){
+    .logo-wrapper .logo-item{
+        flex: 1 0 250px;
+        margin-bottom: var(--spacing-p1);
+    }
+    .logo-wrapper{
+        padding: var(--spacing-p1);
+    }
+}

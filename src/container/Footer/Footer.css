@@ -1,0 +1,20 @@
+footer{
+    background-color: #000;
+}
+.footer-wrapper{
+    padding: 15px 0 ;
+}
+.footer-wrapper p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper svg {
+    width: 20px;
+    height: auto;
+    fill: #ff0000;
+    margin: 0 5px;
+    filter: drop-shadow(1px 1px 2px #ff0000);
+    background-color: transparent;
+    color: red;
+}
