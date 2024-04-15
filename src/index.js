@@ -6,6 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { AnimationProvider } from "./context/AnimationContext";
 
+const noop = () => {};
+console.log = noop;
+console.error = noop;
+console.warn = noop;
+console.info = noop;
+console.debug = noop;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //<React.StrictMode>
