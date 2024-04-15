@@ -1,6 +1,6 @@
 import React from 'react'
 import './Education.css'
-import logoImage from '../../assets/image/om_eng.png';
+import logoImage from '../../assets/image/om_eng.webp';
 import educationImg from '../../assets/image/education_image.svg'
 import { AWSIcon, PowerIcon } from '../../logos'
 import { PrimaryButton } from '../../components/Button/PrimaryButton';
@@ -80,7 +80,7 @@ let certificateArra=[{
         <div className='degree-wrapper'>
           <div className='degree-icon-main'>
             <div className='degree-icon-item'>
-              <img src={logoImage} />
+              <img src={logoImage} type="image/webp"/>
             </div>
           </div>
           <div className='degree-content'>

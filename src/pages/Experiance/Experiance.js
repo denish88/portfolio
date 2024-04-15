@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionFourImg from "../../assets/image/section_4_img.svg";
-import logo from "../../assets/image/om_eng.png";
+import logo from "../../assets/image/om_eng.webp";
 import "./Experiance.css";
 const Experiance = () => {
   const [openAccordian, setOpenAccordian] = useState({
@@ -64,7 +64,7 @@ const Experiance = () => {
                   <div className="accord-card">
                     <div className="accord-card-content">
                       <div className="accord-card-image">
-                        <img src={logo} alt="Logo image" />
+                        <img src={logo} alt="Logo image" type="image/webp" />
                       </div>
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">
@@ -123,7 +123,7 @@ const Experiance = () => {
                   <div className="accord-card">
                     <div className="accord-card-content">
                       <div className="accord-card-image">
-                        <img src={logo} alt="Logo image" />
+                        <img src={logo} alt="Logo image" type="image/webp"/>
                       </div>
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">

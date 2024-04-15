@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import logoImage from '../../assets/image/mylogo1.png';
-import headercircle from '../../assets/image/header-circle.png';
+import logoImage from '../../assets/image/mylogo1.webp';
+import headercircle from '../../assets/image/header-circle.webp';
 import { NavLink,useLocation } from 'react-router-dom'
 import './Header.css'
 
@@ -34,11 +34,11 @@ export const Header = () => {
       <div className='main-header-wrapper'>
         <div className='main-header'>
           <div className='main-logo'>
-            <img src={logoImage} alt="Logo" />
+            <img src={logoImage} alt="Logo" type="image/webp"/>
           </div>
           <div className={toggleClass ? 'nav-bar  mobile-menu' : 'nav-bar'}>
             <div className='header-bg'>
-              <img src={headercircle} alt="Logo" />
+              <img src={headercircle} alt="Logo" type="image/webp" />
             </div>
             <div className='header-list'>
               <ul>

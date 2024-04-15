@@ -149,7 +149,7 @@ header .main-header .header-list::after{
     height: 100%;
     left: 0;
     z-index: -1;
-    background-image: url('../../assets/image/subtract.png');
+    background-image: url('../../assets/image/subtract.webp');
 }
 header .main-header .nav-bar {
     height: 0;
@@ -182,7 +182,7 @@ header .main-header .nav-bar ul {
 header .main-header .nav-bar ul::after{
     position: absolute;
     content: '';
-    background-image: url('../../assets/image/star.png');
+    background-image: url('../../assets/image/star.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -197,7 +197,7 @@ header .main-header .nav-bar ul::after{
 header .main-header .nav-bar ul::before{
     position: absolute;
     content: '';
-    background-image: url('../../assets/image/star-half.png');
+    background-image: url('../../assets/image/star-half.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
