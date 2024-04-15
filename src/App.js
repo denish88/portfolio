@@ -1,10 +1,10 @@
 
-import React,{ useEffect } from 'react';
+import React from 'react';
 import MainApp from './routes/MainApp'
 import './Root.css'
 import { Header } from './container/Header/Header';
 import { Footer } from './container/Footer/Footer';
-import Timer from './components/Timer/Timer';
+// import Timer from './components/Timer/Timer';
 function App() {
 //   useEffect(() => {
 //     if (window.particlesJS) {

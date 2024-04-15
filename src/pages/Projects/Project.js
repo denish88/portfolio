@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project.css'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import { slideInFromLeft, slideInFromRight } from '../../utils/motion'
 import SectionTwoImg from '../../assets/image/projects.svg'
 import { KerasIcon } from '../../logos'

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from "framer-motion"
-import SectionOneImg from '../../assets/image/section_1_img.svg'
+// import SectionOneImg from '../../assets/image/section_1_img.svg'
 import SectionTwoImg from '../../assets/image/section_2_img.svg'
 import SectionThreeImg from '../../assets/image/section_3_img.svg'
 import SectionFourImg from '../../assets/image/section_4_img.svg'

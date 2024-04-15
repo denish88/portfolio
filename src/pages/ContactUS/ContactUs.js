@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ContactUs.css'
-import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, nodeIcon, reactIcon, sqlIcon } from '../../logos'
+import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, reactIcon } from '../../logos'
 import MainImg from "../../assets/image/myPhoto.png"
 
  const ContactUs = () => {
