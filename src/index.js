@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { AnimationProvider } from "./context/AnimationContext";
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const noop = () => {};
 console.log = noop;
@@ -21,6 +22,7 @@ root.render(
       <AnimationProvider>
         <App />
         <SpeedInsights />
+        <Analytics />
       </AnimationProvider>
     </BrowserRouter>
   //</React.StrictMode>
