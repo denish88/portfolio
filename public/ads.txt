@@ -1,1 +1,6 @@
 google.com, pub-2375628575181049, DIRECT, f08c47fec0942fa0
+
+# Variables
+CONTACT=savaliyadenish8888@gamil.com
+SUBDOMAIN=
+INVENTORYPARTNERDOMAIN=
