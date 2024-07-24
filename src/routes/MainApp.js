@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUS/ContactUs";
 import Education from "../pages/Education&Certificate/Education";
 import Project from "../pages/Projects/Project";
 import Experiance from "../pages/Experiance/Experiance";
+import NotFound from "../pages/NotFound/NotFound";
 
 // const Home = lazy(() =>
 //     import('../pages/Home/Home'),
@@ -46,6 +47,10 @@ const MainApp = () => {
       path: "/experience",
       component: Experiance,
     },
+    {
+      path: "/experience",
+      component: Experiance,
+    },
   ];
 
   return (
@@ -60,6 +65,7 @@ const MainApp = () => {
               element={React.createElement(item.component)}
             />
           ))}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </>
