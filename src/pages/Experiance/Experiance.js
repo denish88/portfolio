@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionFourImg from "../../assets/image/section_4_img.svg";
-import logo from "../../assets/image/om_eng.webp";
+import logo from "../../assets/image/elsnerlogo2.svg";
 import "./Experiance.css";
 const Experiance = () => {
   const [openAccordian, setOpenAccordian] = useState({
@@ -52,7 +52,7 @@ const Experiance = () => {
                     openAccordian.first ? "accord-title active" : "accord-title"
                   }
                 >
-                  <span className="accord-title-heading h3">Work</span>
+                  <span className="accord-title-heading h3">Internship</span>
                 </div>
                 <div
                   className={
@@ -69,26 +69,23 @@ const Experiance = () => {
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">
                           <div className="accord-card-title-heading">
-                            <h3>IT Developer</h3>
+                            <h3>ReactJs Developer</h3>
                             <div className="btn-link-effect">
-                              <p>Sugar Labs</p>
+                              <p>Elsner Technologies PVT. LTD.</p>
                             </div>
                           </div>
                           <div className="accord-card-details">
                             <p className="accord-details-main">
-                              May 2023 - Ongoing
+                              Jan 2021
                             </p>
-                            <p>Halifax, Nova Scotia</p>
+                            <p>Ahmedabad, Gujarat</p>
                           </div>
                         </div>
                         <div className="accord-card-description">
                           <p>
-                            Canada Revenue Agency (CRA) administers tax laws for
-                            the Government of Canada and for most provinces and
-                            territories, and administers various social and
-                            economic benefit and incentive programs delivered
-                            through the tax system.
+                          I've gained substantial experience during my 6-month internship at Elsner Technologies Pvt. Ltd., where I worked on ReactJS, NodeJS, and AngularJS. This hands-on experience helped me hone my skills in full-stack development.
                           </p>
+                          <p></p>
                         </div>
                       </div>
                     </div>
@@ -128,25 +125,21 @@ const Experiance = () => {
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">
                           <div className="accord-card-title-heading">
-                            <h3>IT Developer</h3>
+                            <h3>Full Stact JS Developer</h3>
                             <div className="btn-link-effect">
-                              <p>Sugar Labs</p>
+                            <p>Elsner Technologies PVT. LTD.</p>
                             </div>
                           </div>
                           <div className="accord-card-details">
                             <p className="accord-details-main">
-                              May 2023 - Ongoing
+                              May 2021 - Ongoing
                             </p>
-                            <p>Halifax, Nova Scotia</p>
+                            <p>Ahmedabad, Gujarat</p>
                           </div>
                         </div>
                         <div className="accord-card-description">
                           <p>
-                            Canada Revenue Agency (CRA) administers tax laws for
-                            the Government of Canada and for most provinces and
-                            territories, and administers various social and
-                            economic benefit and incentive programs delivered
-                            through the tax system.
+                          For the past two years, I’ve continued my journey with Elsner as a Junior Full Stack JavaScript Developer, contributing to various complex projects, building scalable applications, and expanding my expertise in modern JavaScript frameworks.
                           </p>
                         </div>
                       </div>

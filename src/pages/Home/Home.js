@@ -90,12 +90,10 @@ const Home = () => {
                             animate={controlsSection1} variants={slideInFromLeft(animateSections ? 0.5 : 3.5)}>
                             <div className='banner-conatent-wrapper'>
                                 <div className='section-heading'>
-                                    <h1>Hello,</h1>
+                                <h1>Hey there,</h1>
                                 </div>
                                 <div className='para-rtl'>
-                                    <p>I'm <span>Denish Savaliya,</span> `a Full Stack Developer,</p>
-                                    <p>forever exploring tech's next wave. Always</p>
-                                    <p>Learning.</p>
+                                 <p>I'm <span>Denish Savaliya,</span> a driven Full Stack JavaScript Developer, committed to crafting cutting-edge, scalable web solutions that push the limits of innovation.</p> <p>I thrive on solving complex challenges and staying at the forefront of web technologies,</p> <p>constantly pushing the envelope and embracing lifelong learning.</p>
                                 </div>
                                 <div className='social-icon'>
                                     <ul>
@@ -192,10 +190,10 @@ const Home = () => {
                                         <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Backend development using NodeJS,ExpressJS and MongoDB</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Provide seamless front-end and back-end integration.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Ensure cross-device compatibility for a flawless user experience.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -237,16 +235,16 @@ const Home = () => {
                                 </ul>
                                 <ul className='para-rtl'>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12 and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Build and deploy robust applications that grow with your business using AWS, Google Cloud, and Heroku.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Handle cloud architecture, setup, and deployment from start to finish.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Maximize application speed, security, and reliability with cutting-edge cloud optimization strategies.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Leverage Docker for flexible, efficient deployment and management of your applications.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -288,16 +286,16 @@ const Home = () => {
 
                                 <ul className='para-rtl'>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12 and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Implement AI and machine learning models using TensorFlow and PyTorch.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Transform raw data into actionable insights that empower businesses to make smarter, data-driven decisions.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Drive smarter decision-making with data-driven solutions.</span>
                                     </li>
                                     <li>
-                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Please allow ads and let sponsors fund your surfing.12</span>
+                                        <span className='code-icon'>{PowerIcon("15px", "15px", "yellow")}Leverage the power of AI to drive innovation, optimize operations, and uncover hidden opportunities in your data.</span>
                                     </li>
                                 </ul>
                             </div>

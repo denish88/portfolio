@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './ContactUs.css'
 import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, reactIcon } from '../../logos'
-import MainImg from "../../assets/image/myPhoto.webp"
+import MainImg from "../../assets/image/logo_bg.png"
 
  const ContactUs = () => {
     // State to hold the icon size

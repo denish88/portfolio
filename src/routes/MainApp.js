@@ -32,6 +32,10 @@ const MainApp = () => {
       component: Home,
     },
     {
+      path: "",
+      component: Home,
+    },
+    {
       path: "/education",
       component: Education,
     },
