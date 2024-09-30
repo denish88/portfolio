@@ -8,6 +8,7 @@ import Education from "../pages/Education&Certificate/Education";
 import Project from "../pages/Projects/Project";
 import Experiance from "../pages/Experiance/Experiance";
 import NotFound from "../pages/NotFound/NotFound";
+import { ScrollToTop } from "../hooks/scrollToTop";
 
 // const Home = lazy(() =>
 //     import('../pages/Home/Home'),
@@ -29,10 +30,6 @@ const MainApp = () => {
   let routeArr = [
     {
       path: "/",
-      component: Home,
-    },
-    {
-      path: "",
       component: Home,
     },
     {
@@ -61,6 +58,7 @@ const MainApp = () => {
     <>
       <Suspense fallback={<Loader />}>
         <LandingAnimation />
+        <ScrollToTop />
         <Routes>
           {routeArr.map((item, index) => (
             <Route

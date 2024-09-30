@@ -128,12 +128,12 @@ const Home = () => {
                     <div className='two-colum-wrapper md-column'>
 
                         <motion.div className='left-pt w-40 two-colum-image-wrapper' ref={refSection2} initial="hidden"
-                            animate={controlsSection2} variants={slideInFromLeft(animateSections ? 0.5 : 3.5)} >
+                            animate={controlsSection2} variants={slideInFromLeft(animateSections ? 0.5 : 3)} >
                             <img src={SectionTwoImg} alt='work image' />
                         </motion.div>
 
                         <motion.div className='two-colum-content' ref={refSection2} initial="hidden"
-                            animate={controlsSection2} variants={slideInFromRight(animateSections ? 0.5 : 3.5)}>
+                            animate={controlsSection2} variants={slideInFromRight(animateSections ? 0.5 : 3)}>
                             <div className='sub-heaidng'>
                                 <h3 className='h2'>Full stack development</h3>
                             </div>
