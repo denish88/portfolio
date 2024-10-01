@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logoImage from '../../assets/image/logo_bg.png';
+import logoImage from '../../assets/image/drawing-white50x50.png';
 import headercircle from '../../assets/image/header-circle.webp';
 import { NavLink,useLocation } from 'react-router-dom'
 import './Header.css'

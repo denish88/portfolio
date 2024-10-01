@@ -9,6 +9,7 @@ header .main-header {
 
 header .main-header .main-logo img {
     width: 100%;
+    padding: 8px;
 }
 
 header .main-header .main-logo {
