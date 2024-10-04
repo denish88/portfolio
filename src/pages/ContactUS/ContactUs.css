@@ -100,9 +100,10 @@ section.contacts-section {
 .contacts-wraper .image-wrapper .main-image .main-image-wrapper img {
     width: 200px;
     height: 200px;
-    border: 2px solid #857e7e;
+    /* border: 2px solid #857e7e; */
     border-radius: 50%;
     padding: 8px;
+    object-fit: none;
 }
 
 .contacts-wraper .contacts-form {
