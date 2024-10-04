@@ -1,9 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import './ContactUs.css'
 import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, reactIcon } from '../../logos'
 import MainImg from "../../assets/image/logo_bg.png"
+import emailjs from 'emailjs-com';
+import {  toast } from 'react-toastify';
+import ReCAPTCHA from 'react-google-recaptcha';
 
  const ContactUs = () => {
+
+    const[disableSubmitButton,setDisableSubmitButton]=useState(false);
+    const [recaptchaToken, setRecaptchaToken] = useState(null); // State to store reCAPTCHA token
+ // Use ref to access reCAPTCHA instance
+ const recaptchaRef = useRef(null);
+
+     // State for the form fields
+     const [formData, setFormData] = useState({
+        email: '',
+        contactNo: '',
+        message: ''
+    });
     // State to hold the icon size
     const [iconSize, setIconSize] = useState({ width: '35px', height: '35px' });
 
@@ -26,6 +41,117 @@ import MainImg from "../../assets/image/logo_bg.png"
         // Cleanup event listener on unmount
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    // Handle input changes
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    // Handle reCAPTCHA change
+    const handleRecaptchaChange = (token) => {
+        setRecaptchaToken(token); // Save the token when reCAPTCHA is solved
+    };
+
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+         // Ensure reCAPTCHA is validated before sending email
+         if (!recaptchaToken) {
+            toast.error(
+                <>
+                    <strong>Error! </strong> 🚫<br />
+                    Please complete the reCAPTCHA verification.
+                </>, 
+                {
+                    icon: '⚠️',
+                    position: 'bottom-center',
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                }
+            );
+            return;
+        }
+        setDisableSubmitButton(true)
+        console.log(formData);
+
+        // Send form data to your email
+        await sendEmail(formData);
+    };
+
+     // Example using EmailJS to send email
+     const sendEmail = async (formData) => {
+        emailjs.send(
+            'service_wpfn59b',          // Replace with your service ID
+            'template_o5353ub',         // Replace with your template ID
+            {
+                email: formData.email,
+                contactNo: formData.contactNo,
+                message: formData.message,
+            },
+            'pW1idjyknFog70ELz'               // Replace with your user ID
+        ).then((response) => {
+            toast.success(
+                <>
+                    <strong>Success! </strong> 🎉<br />
+                    Thank you for contacting us. We’ll get back to you soon.
+                </>, 
+                {
+                    icon: '✅',
+                    position: 'bottom-center',
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                }
+            );
+            resetForm();
+            setDisableSubmitButton(false);
+            setRecaptchaToken();
+            recaptchaRef.current.reset(); // Reset the reCAPTCHA
+            console.log('SUCCESS!', response.status, response.text);
+        }).catch((error) => {
+            toast.error(
+                <>
+                    <strong>Error! </strong> 🚫<br />
+                    Please try again later. We’re facing some issues.
+                </>, 
+                {
+                    icon: '⚠️',
+                    position: 'bottom-center',
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                }
+            );
+            setDisableSubmitButton(false);
+            setRecaptchaToken();
+            recaptchaRef.current.reset(); // Reset the reCAPTCHA
+            console.log('FAILED...', error);
+        });
+    };
+
+
+    // Function to reset form
+    const resetForm = () => {
+        setFormData({
+            email: '',
+            contactNo: '',
+            message: ''
+        });
+    };
+    
     return (
         <section className='contacts-section c-pd-3'>
             <div className='container'>
@@ -105,21 +231,44 @@ import MainImg from "../../assets/image/logo_bg.png"
                                         </ul>
                                     </div>
                                     <div className='form-main'>
+                                    <form onSubmit={handleSubmit}>
+
                                         <div className='field'>
-                                            <input type='text' />
+                                            <input
+                                              type='email' 
+                                                    name="email"
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    required />
                                             <label>Email</label>
                                         </div>
                                         <div className='field'>
-                                            <input name='' type='text' />
+                                            <input name='contactNo' 
+                                                    type='text'
+                                                    value={formData.contactNo}
+                                                    onChange={handleChange}
+                                                    required/>
                                             <label>Contact No.</label>
                                         </div>
                                         <div className='field'>
-                                            <textarea rows="4" cols="50" >
+                                            <textarea name="message" 
+                                                    rows="4" 
+                                                    cols="50"
+                                                    value={formData.message}
+                                                    onChange={handleChange}
+                                                    required >
                                             </textarea>
                                             <label>Message</label>
                                         </div>
+                                        <div className='field'>
+                                        <ReCAPTCHA
+                    sitekey="6LdTelcqAAAAAFT9TFoQCeoDKdVIYNHyGXq-iZL5" // Replace with your reCAPTCHA site key
+                    onChange={handleRecaptchaChange}
+                    ref={recaptchaRef}
+                />
+                </div>
                                         <div className='contacts-btn'>
-                                            <button >
+                                            <button disabled={disableSubmitButton} type='submit'>
                                                 <div class="svg-wrapper-1">
                                                     <div class="svg-wrapper">
                                                         <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -131,6 +280,7 @@ import MainImg from "../../assets/image/logo_bg.png"
                                                 <span>Send</span>
                                             </button>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -77,7 +77,7 @@ const Project = () => {
                   <h2>AFDB</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -126,7 +126,7 @@ const Project = () => {
                   <h2>Artboxy</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -158,7 +158,7 @@ const Project = () => {
                   <h2>Dynamic QR Code</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -195,7 +195,7 @@ const Project = () => {
                   <h2>HRMS</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -232,7 +232,7 @@ const Project = () => {
                   <h2>PMS</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -269,7 +269,7 @@ const Project = () => {
                   <h2>I Manage</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -296,7 +296,7 @@ const Project = () => {
                   <h2>Drive Points</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">
@@ -328,7 +328,7 @@ const Project = () => {
                   <h2>Her Age</h2>
                 </div>
                 <div className="para-rtl">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
                 </div>
                 <div className="project-icon">
                   <div className="project-icon-item">

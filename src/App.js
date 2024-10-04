@@ -5,6 +5,9 @@ import './Root.css'
 import { Header } from './container/Header/Header';
 import { Footer } from './container/Footer/Footer';
 // import Timer from './components/Timer/Timer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 //   useEffect(() => {
 //     if (window.particlesJS) {
@@ -91,6 +94,7 @@ function App() {
       <Header />
       {/* <Timer /> */}
       <MainApp />
+      <ToastContainer />
       <Footer />
     </>
   );
