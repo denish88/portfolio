@@ -24,21 +24,37 @@ section.contacts-section {
 }
 
 .contacts-wraper .image-wrapper .icon-wrapper {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     padding: 2px;
     display: grid;
     place-items: center;
-    border: 1px solid #857e7e;
+    border: 1px solid rgba(235, 77, 90, 0.45);
+    background: #000;
+    box-shadow: 0 0 12px rgba(235, 77, 90, 0.15);
 }
 
 .contacts-wraper .image-wrapper .icon-wrapper .icon {
-    padding: 2px;
-    background-color: #fff;
+    padding: 4px;
+    background-color: #000;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+}
+
+.contacts-wraper .image-wrapper .icon-wrapper .icon svg {
+    max-width: 28px;
+    max-height: 28px;
+    width: auto;
+    height: auto;
+}
+
+/* Next.js mark is dark — invert so it stays visible on black */
+.contacts-wraper .image-wrapper .icon-wrapper:nth-child(2) .icon svg {
+    filter: invert(1);
 }
 
 .contacts-wraper .image-wrapper .icon-wrapper {
@@ -92,18 +108,29 @@ section.contacts-section {
 }
 
 .contacts-wraper .image-wrapper .main-image {
-    /* width: 350px; */
-    /* height: 350px; */
     border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    display: grid;
+    place-items: center;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px rgba(235, 77, 90, 0.2);
+}
+
+.contacts-wraper .image-wrapper .main-image .main-image-wrapper {
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-items: center;
 }
 
 .contacts-wraper .image-wrapper .main-image .main-image-wrapper img {
-    width: 200px;
-    height: 200px;
-    /* border: 2px solid #857e7e; */
-    border-radius: 50%;
-    padding: 8px;
-    object-fit: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    object-fit: contain;
 }
 
 .contacts-wraper .contacts-form {
@@ -133,13 +160,21 @@ section.contacts-section {
 }
 
 .contacts-wraper .social-media ul li .media-icon {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background-color: #ffffff4f;
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.contacts-wraper .social-media ul li .media-icon:hover {
+    border-color: var(--ad-bs-color);
+    box-shadow: 0 0 16px rgba(235, 77, 90, 0.35);
+    transform: translateY(-2px);
 }
 
 .contacts-wraper .form-main .field input,
@@ -222,7 +257,7 @@ section.contacts-section {
 .contacts-btn button {
     font-family: inherit;
     font-size: 18px;
-    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+    background: var(--ad-bs-color);
     color: white;
     padding: 8px 18px 8px 5px;
     display: flex;
@@ -230,15 +265,15 @@ section.contacts-section {
     justify-content: center;
     border: none;
     border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 14px rgba(235, 77, 90, 0.35);
     transition: all 0.3s;
 }
 
 .contacts-btn button:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 18px rgba(235, 77, 90, 0.45);
     padding: 0em;
-    background: linear-gradient(to bottom, #5bd9ec 0%, #97c3ff 100%);
+    background: #f05c68;
     cursor: pointer;
 }
 
@@ -279,7 +314,7 @@ section.contacts-section {
 }
 
 .contacts-btn button:hover .svg-wrapper {
-    background-color: rgba(43, 169, 228, 0.897);
+    background-color: rgba(255, 255, 255, 0.25);
     width: 46px;
     height: 46px;
 }
@@ -299,7 +334,7 @@ section.contacts-section {
     height: 100%;
     border-radius: 50%;
     z-index: -1;
-    border: 2px dashed #857e7e;
+    border: 2px dashed rgba(235, 77, 90, 0.45);
     animation: circleAnimate 10s ease-in-out infinite;
 }
 .contacts-wraper .contacts-image-wrapper .image-wrapper{
@@ -375,9 +410,19 @@ section.contacts-section {
     }
 
     .contacts-wraper .image-wrapper .main-image,
+    .contacts-wraper .image-wrapper .main-image .main-image-wrapper {
+        width: 170px;
+        height: 170px;
+    }
+
+    .contacts-wraper .image-wrapper .main-image .main-image-wrapper {
+        width: 96px;
+        height: 96px;
+    }
+
     .contacts-wraper .image-wrapper .main-image .main-image-wrapper img {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
     }
 
     .contacts-wraper .image-wrapper .icon-wrapper:nth-child(1) {
@@ -427,9 +472,19 @@ section.contacts-section {
     }
 
     .contacts-wraper .image-wrapper .main-image,
+    .contacts-wraper .image-wrapper .main-image .main-image-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contacts-wraper .image-wrapper .main-image .main-image-wrapper {
+        width: 84px;
+        height: 84px;
+    }
+
     .contacts-wraper .image-wrapper .main-image .main-image-wrapper img {
-        width: 220px;
-        height: 220px;
+        width: 100%;
+        height: 100%;
     }
 
     .contacts-wraper .image-wrapper .icon-wrapper {

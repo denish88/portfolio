@@ -1,7 +1,7 @@
 import React, { useState, useEffect,useRef } from 'react'
 import './ContactUs.css'
 import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, reactIcon } from '../../logos'
-import MainImg from "../../assets/image/logo-ds.png"
+import MainImg from "../../assets/image/logo-mark.svg"
 import emailjs from 'emailjs-com';
 import {  toast } from 'react-toastify';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -200,7 +200,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
                             </div>
                             <div className='main-image'>
                                 <div className='main-image-wrapper'>
-                                    <img src={MainImg} type="image/webp" alt='my-photo'/>
+                                    <img src={MainImg} alt="Denish Savaliya logo"/>
                                 </div>
                             </div>
                         </div>
@@ -217,16 +217,48 @@ import ReCAPTCHA from 'react-google-recaptcha';
                                     <div className='social-media'>
                                         <ul>
                                             <li>
-                                                <div className='media-icon'>{LinkedInIcon('30px', '30px')}</div>
+                                                <a
+                                                  className='media-icon'
+                                                  href="https://www.linkedin.com/in/savaliya-denish-11aa37217"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  aria-label="LinkedIn"
+                                                >
+                                                  {LinkedInIcon('22px', '22px')}
+                                                </a>
                                             </li>
                                             <li>
-                                                <div className='media-icon'>{InstaIcon('30px', '30px')}</div>
+                                                <a
+                                                  className='media-icon'
+                                                  href="https://www.instagram.com/deni_sh_22"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  aria-label="Instagram"
+                                                >
+                                                  {InstaIcon('22px', '22px')}
+                                                </a>
                                             </li>
                                             <li>
-                                                <div className='media-icon'>{TelegramIcon('30px', '30px')}</div>
+                                                <a
+                                                  className='media-icon'
+                                                  href="https://t.me/"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  aria-label="Telegram"
+                                                >
+                                                  {TelegramIcon('22px', '22px')}
+                                                </a>
                                             </li>
                                             <li>
-                                                <div className='media-icon'>{TwitterIcon('30px', '30px')}</div>
+                                                <a
+                                                  className='media-icon'
+                                                  href="https://twitter.com/"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  aria-label="Twitter"
+                                                >
+                                                  {TwitterIcon('22px', '22px')}
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
