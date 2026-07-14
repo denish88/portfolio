@@ -3,11 +3,16 @@ footer{
 }
 .footer-wrapper{
     padding: 15px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .footer-wrapper p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 .footer-wrapper svg {
     width: 20px;
@@ -17,4 +22,26 @@ footer{
     filter: drop-shadow(1px 1px 2px #ff0000);
     background-color: transparent;
     color: red;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: calc(var(--base-font) * 0.85);
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--ad-text-color);
+}
+
+.footer-dot {
+    opacity: 0.4;
 }

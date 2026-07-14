@@ -1,0 +1,109 @@
+.policy-section {
+  overflow: visible;
+}
+
+.policy-header {
+  max-width: 720px;
+  margin: 0 auto var(--spacing-p3);
+  text-align: center;
+}
+
+.policy-label {
+  display: block;
+  font-family: var(--earthorbiter-font);
+  font-size: calc(var(--base-font) * 0.95);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.policy-title {
+  font-family: var(--ad-heading-font);
+  font-size: var(--large-font-ad);
+  color: var(--ad-text-color);
+  font-weight: var(--font-normal);
+  line-height: 1;
+  margin: 0 0 12px;
+  letter-spacing: 2px;
+}
+
+.policy-updated {
+  font-size: calc(var(--base-font) * 0.85);
+  opacity: 0.65;
+  margin-bottom: var(--spacing-p2);
+}
+
+.policy-lead {
+  text-align: left;
+  line-height: 1.55;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.policy-block {
+  max-width: 720px;
+  margin: 0 auto var(--spacing-p3);
+  padding: var(--spacing-p2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgb(255 255 255 / 6%);
+}
+
+.policy-block h2 {
+  font-size: var(--h3);
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-p1);
+  color: var(--base-color);
+}
+
+.policy-block p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+  opacity: 0.92;
+}
+
+.policy-block p:last-child {
+  margin-bottom: 0;
+}
+
+.policy-block ul {
+  margin: 0 0 12px;
+  padding-left: 1.2em;
+  list-style: disc;
+}
+
+.policy-block ul li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+  opacity: 0.92;
+  display: list-item;
+}
+
+.policy-block strong {
+  color: var(--ad-text-color);
+  font-weight: var(--font-bold);
+}
+
+.policy-link {
+  color: var(--ad-text-color);
+  font-weight: var(--font-bold);
+}
+
+.policy-note {
+  margin-top: var(--spacing-p1);
+  padding-top: var(--spacing-p1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: calc(var(--base-font) * 0.92);
+  opacity: 0.8 !important;
+}
+
+@media (max-width: 767px) {
+  .policy-block {
+    padding: var(--spacing-p1);
+  }
+
+  .policy-lead {
+    font-size: var(--base-font);
+  }
+}

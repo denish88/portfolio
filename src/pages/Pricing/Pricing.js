@@ -259,7 +259,11 @@ const Pricing = () => {
             <h3>Ready to start?</h3>
             <p>
               Tell me about your project on the contact page and we&apos;ll lock
-              in the right package.
+              in the right package. See{" "}
+              <Link to="/privacy#refunds" className="btn-link-effect">
+                Privacy &amp; Refunds
+              </Link>{" "}
+              before you pay.
             </p>
             <Link to="/contact" className="primary-btn">
               <span>Contact Me</span>

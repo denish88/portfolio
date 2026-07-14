@@ -8,6 +8,7 @@ import Education from "../pages/Education&Certificate/Education";
 import Project from "../pages/Projects/Project";
 import Experiance from "../pages/Experiance/Experiance";
 import Pricing from "../pages/Pricing/Pricing";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import NotFound from "../pages/NotFound/NotFound";
 import { ScrollToTop } from "../hooks/scrollToTop";
 
@@ -52,6 +53,10 @@ const MainApp = () => {
     {
       path: "/pricing",
       component: Pricing,
+    },
+    {
+      path: "/privacy",
+      component: PrivacyPolicy,
     },
   ];
 
