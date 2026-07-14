@@ -19,7 +19,7 @@ const Project = () => {
               initial="hidden"
               variants={slideInFromLeft(1.5)}
             >
-              <img src={SectionTwoImg} alt="work image" />
+              <img src={SectionTwoImg} alt="Projects overview" />
             </div>
 
             <div

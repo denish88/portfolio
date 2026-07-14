@@ -129,7 +129,7 @@ const Home = () => {
 
                         <motion.div className='left-pt w-40 two-colum-image-wrapper' ref={refSection2} initial="hidden"
                             animate={controlsSection2} variants={slideInFromLeft(animateSections ? 0.5 : 3)} >
-                            <img src={SectionTwoImg} alt='work image' />
+                            <img src={SectionTwoImg} alt="Full stack development" />
                         </motion.div>
 
                         <motion.div className='two-colum-content' ref={refSection2} initial="hidden"
@@ -251,7 +251,7 @@ const Home = () => {
                         </motion.div>
                         <motion.div className='right-pt w-40 two-colum-image-wrapper md-column-reverse' ref={refSection3} initial="hidden"
                             animate={controlsSection3} variants={slideInFromRight(0.5)}>
-                            <img src={SectionThreeImg} alt='cloud service image' />
+                            <img src={SectionThreeImg} alt="Cloud architecture" />
                         </motion.div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@ const Home = () => {
                     <div className='two-colum-wrapper md-column'>
                         <motion.div className='left-pt w-40 two-colum-image-wrapper' ref={refSection4} initial="hidden"
                             animate={controlsSection4} variants={slideInFromLeft(0.5)}>
-                            <img src={SectionFourImg} alt='analytic image' />
+                            <img src={SectionFourImg} alt="Data science and AI" />
                         </motion.div>
                         <motion.div className='two-colum-content' ref={refSection4} initial="hidden"
                             animate={controlsSection4} variants={slideInFromRight(0.5)}>

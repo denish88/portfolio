@@ -15,7 +15,7 @@ const Experiance = () => {
           <div className="experiance-main-wrapper">
             <div className="image-wrapper">
               <div className="main-image-wrappe">
-                <img src={SectionFourImg} alt="experiance image" />
+                <img src={SectionFourImg} alt="Experience overview" />
               </div>
             </div>
             <div className="content-wrapper">
@@ -64,7 +64,7 @@ const Experiance = () => {
                   <div className="accord-card">
                     <div className="accord-card-content">
                       <div className="accord-card-image">
-                        <img src={logo} alt="Logo image" type="image/webp" />
+                        <img src={logo} alt="Elsner Technologies" />
                       </div>
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">
@@ -120,7 +120,7 @@ const Experiance = () => {
                   <div className="accord-card">
                     <div className="accord-card-content">
                       <div className="accord-card-image">
-                        <img src={logo} alt="Logo image" type="image/webp"/>
+                        <img src={logo} alt="Elsner Technologies"/>
                       </div>
                       <div className="accord-card-content-main">
                         <div className="accord-card-title">
