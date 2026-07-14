@@ -1,7 +1,7 @@
 import React, { useState, useEffect,useRef } from 'react'
 import './ContactUs.css'
 import { FirebaseIcon, GoogleCloudIcon, InstaIcon, LinkedInIcon, TelegramIcon, TenserFlowIcon, TwitterIcon, angularIcon, gitbashIcon, mongoIcon, nextjslIcon, reactIcon } from '../../logos'
-import MainImg from "../../assets/image/drawing-white64x64.png"
+import MainImg from "../../assets/image/logo-ds.png"
 import emailjs from 'emailjs-com';
 import {  toast } from 'react-toastify';
 import ReCAPTCHA from 'react-google-recaptcha';

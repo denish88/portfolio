@@ -182,6 +182,7 @@ svg {
   font-family: var(--bs-font-family);
   font-weight: var(--font-bold);
   cursor: pointer;
+  display: inline-block;
 }
 .primary-btn::after{
   content: "";

@@ -104,7 +104,7 @@ const Home = () => {
                                     </ul>
                                 </div>
                                 <div className='banner-button'>
-                                    <PrimaryButton classname="primary-btn" text="Contact Me" />
+                                    <PrimaryButton classname="primary-btn" text="Contact Me" to="/contact" />
                                 </div>
                             </div>
                         </motion.div>

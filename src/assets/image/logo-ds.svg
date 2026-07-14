@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Denish Savaliya">
+  <rect width="64" height="64" rx="16" fill="#000000"/>
+  <path
+    d="M14 12v40"
+    stroke="#ffffff"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M14 12h12c12.15 0 22 9.85 22 22s-9.85 22-22 22H14"
+    stroke="#ffffff"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M40 46L54 18"
+    stroke="#eb4d5a"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+  <circle cx="54" cy="14" r="5" fill="#eb4d5a"/>
+</svg>

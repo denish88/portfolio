@@ -95,91 +95,131 @@
         padding-left: 0
     }
 }
-/* certificate css*/
-.logo-section .section-heading{
-    text-align: center;
-    margin-bottom: var(--spacing-p1);
-}
-.logo-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.logo-wrapper .logo-item{
-    flex: 0 0 calc(33.33% - 10px );
-    border:     1px solid #2b2b2b;
-    position: relative;
-    padding: 5px;
-    overflow: hidden;
-}
-.logo-wrapper .logo-item::after,
-.logo-wrapper .logo-item::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 1px solid #fff;
-    z-index: -1;
-}
-.logo-wrapper .logo-item::before{
-    border-top-width: 0;
-    border-bottom-width: 0;
-    animation: animate1 4s linear infinite;
-}
-.logo-wrapper .logo-item::after{
-    border-left-width: 0;
-    border-right-width: 0;
-    animation: animate 4s linear infinite;
-}
-.logo-wrapper .logo-item .image-wrapper{
-    padding: var(--spacing-p1);
-}
-
-.logo-wrapper .logo-item .content-wrapper{
-    padding: var(--spacing-p3)  var(--spacing-p1);
-    background-color: var(--card-bg);
-}
-.logo-wrapper .logo-item {
+/* certificate css */
+.logo-section .section-heading {
   text-align: center;
-  cursor: pointer;
-}
-.logo-wrapper .logo-item:hover .image-wrapper{
-    opacity: .5;
-}
-.logo-wrapper .logo-item:hover .hover-wrapper   {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1) ;
-    background: var(--card-bg);
-    padding: var(--spacing-p1);
-    z-index: 2;
-    backdrop-filter: blur(4px);
-}
-.hover-wrapper {
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  margin-bottom: var(--spacing-p1);
 }
 
+.logo-section .cert-intro {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--spacing-p3);
+  opacity: 0.85;
+  line-height: 1.5;
+}
 
-@media (max-width:767px){
-    .logo-wrapper .logo-item{
-        flex: 1 0 250px;
-        margin-bottom: var(--spacing-p1);
-    }
-    .logo-wrapper{
-        padding: var(--spacing-p1);
-    }
+.logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-p2);
+  justify-content: center;
+}
+
+.logo-wrapper .logo-item {
+  flex: 0 0 calc(33.333% - 22px);
+  max-width: 360px;
+  border: 1px solid #2b2b2b;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  list-style: none;
+  text-align: center;
+}
+
+.logo-wrapper .logo-item::after,
+.logo-wrapper .logo-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.logo-wrapper .logo-item::before {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  animation: animate1 4s linear infinite;
+}
+
+.logo-wrapper .logo-item::after {
+  border-left-width: 0;
+  border-right-width: 0;
+  animation: animate 4s linear infinite;
+}
+
+.logo-wrapper .logo-item .logo-item-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-wrapper .logo-item .image-wrapper {
+  padding: var(--spacing-p2) var(--spacing-p1);
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.logo-wrapper .logo-item .main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 110px;
+  height: 110px;
+}
+
+.logo-wrapper .logo-item .main-image svg {
+  max-width: 88px;
+  max-height: 88px;
+  width: auto;
+  height: auto;
+}
+
+.logo-wrapper .logo-item .main-image--invert svg {
+  filter: invert(1);
+}
+
+.logo-wrapper .logo-item .content-wrapper {
+  padding: var(--spacing-p2) var(--spacing-p1);
+  background-color: var(--card-bg);
+  flex: 1;
+}
+
+.logo-wrapper .logo-item .logo-title h4 {
+  font-family: var(--earthorbiter-font);
+  font-size: calc(var(--base-font) * 0.95);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.logo-wrapper .logo-item .para-rtl {
+  font-size: calc(var(--base-font) * 0.9);
+  opacity: 0.85;
+}
+
+@media (max-width: 991px) {
+  .logo-wrapper .logo-item {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-wrapper .logo-item {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .logo-wrapper {
+    padding: 0;
+    gap: var(--spacing-p2);
+  }
 }

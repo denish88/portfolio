@@ -9,11 +9,18 @@ header .main-header {
 
 header .main-header .main-logo img {
     width: 100%;
-    padding: 8px;
+    padding: 4px;
+    display: block;
 }
 
 header .main-header .main-logo {
-    max-width: 50px;
+    max-width: 52px;
+    z-index: 2;
+}
+
+header .main-header .main-logo a {
+    display: block;
+    line-height: 0;
 }
 
 header .main-header .nav-bar ul {

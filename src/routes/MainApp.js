@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUS/ContactUs";
 import Education from "../pages/Education&Certificate/Education";
 import Project from "../pages/Projects/Project";
 import Experiance from "../pages/Experiance/Experiance";
+import Pricing from "../pages/Pricing/Pricing";
 import NotFound from "../pages/NotFound/NotFound";
 import { ScrollToTop } from "../hooks/scrollToTop";
 
@@ -49,8 +50,8 @@ const MainApp = () => {
       component: Experiance,
     },
     {
-      path: "/experience",
-      component: Experiance,
+      path: "/pricing",
+      component: Pricing,
     },
   ];
 
